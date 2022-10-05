@@ -56,6 +56,25 @@ It's the main feature of **TypeScript**. That means that every object in the cod
 * Interfaces
 * Inheritance
 
+## Setting up the application
+
+In order to develop **Angular** application, thing such as:
+
+* **Angular** framework and libraries
+* **Angular  CLI**
+* **TypeScript** programming language
+* Testing tools
+* Other dependencies
+
+are needed.
+
+### package.json
+
+Luckily there is no need to download all of that manually. `package.json` file, that specifies **npm**  project package requirements can be created. **npm** installs all the specified dependencies and distinguishes between:
+
+* development only dependencies
+* release dependencies
+
 ---
 
 ## References
