@@ -1,6 +1,6 @@
 # Angular Sandbox
 
-A step by step guide on [Angular](https://angular.io/) framework with code examples.
+Step by step guide on [Angular](https://angular.io/) framework with code examples.
 
 ## What is Angular
 
