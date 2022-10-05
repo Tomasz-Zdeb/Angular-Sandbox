@@ -31,8 +31,32 @@ An **Angular component** consists of:
    It can be also called **Code Behind**
 * **Metadata** that provides additional information about the component to **Angular**
 
+## TypeScript
+
+Open-Source programming language developed by **Microsoft**. It is a superset of JavaScript and it's used for building **Angular** applications.
+
+### Transpilation
+
+Before being interpreted by a web browser, **TypeScript** must be compiled to plain **JavaScript**.  
+
+### Strong typing
+
+It's the main feature of **TypeScript**. That means that every object in the code has to be a well known type.
+
+### Class-based object-orientation
+
+**Type Scripts** implements such **OOP** concepts as:
+
+* Classes
+* Interfaces
+* Inheritance
+
+---
+
 ## References
 
 * [Angular Docs](https://angular.io/docs)
+
+* [TypeScript Website](https://www.typescriptlang.org/)
 
 * [Angular: Getting Started Pluralsight Course](https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents)
