@@ -2,6 +2,8 @@
 
 Step by step guide on [Angular](https://angular.io/) framework with code examples.
 
+> Please take into account that some examples imported to this guide may be provided under different licensing terms than this guide.
+
 ## What is Angular
 
 **Angular** is a **JavaScript** framework, that uses **HTML**, **CSS** and **TypeScript** to build client-side applications.
