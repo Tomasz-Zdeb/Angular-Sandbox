@@ -15,6 +15,11 @@ Step by step guide on [Angular](https://angular.io/) framework with code example
 * Enforces modular design
 * Provides built in functionalities that ease up Back-End integration
 
+## Development tools
+
+* **Code Editor** - Suggested: [VS Code](https://code.visualstudio.com/)
+* **npm** - It comes bundled with [Node.js](https://nodejs.org/en/), therefore **Node** installation is necessary to get **npm**.  
+
 ## Angular application architecture
 
 Angular applications consist of multiple **components** and **services** (E.g. service for accessing data from Back-End app), that can be shared between these.
