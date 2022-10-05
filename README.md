@@ -84,3 +84,5 @@ Luckily there is no need to download all of that manually. `package.json` file, 
 * [TypeScript Website](https://www.typescriptlang.org/)
 
 * [Angular: Getting Started Pluralsight Course](https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents)
+
+* [DeborahK's Angular-GettingStarted GitHub Repository](https://github.com/DeborahK/Angular-GettingStarted)
