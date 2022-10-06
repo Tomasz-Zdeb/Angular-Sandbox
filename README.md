@@ -77,6 +77,28 @@ Luckily there is no need to download all of that manually. `package.json` file, 
 * development only dependencies
 * release dependencies
 
+It contains also metadata about the build like **version** or **project name**, and **scripts** which are executed when a certain **npm** command is being run. This mapping allows to use the same **npm** commands for **build**, **run**, **tests** and so on, in different projects based on different technologies.
+
+## Running Angular application
+
+Typically **Angular** utility **scripts** look something like this:  
+
+```json
+ "scripts": {
+    "ng": "ng",
+    "start": "ng serve -o",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  }
+```
+
+* **ng** runs **Angular CLI**
+* **serve** command for, tells **ng** to build the project and run local development web server
+* **-o** flag is used to open the development web server's exposed **URL** in hosts default web browser
+
+> To stop the running development server terminate the server console session the way You like E.g. by using **^C**
+
 ---
 
 ## References
