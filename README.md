@@ -20,7 +20,13 @@ Step by step guide on [Angular](https://angular.io/) framework with code example
 ## Development tools
 
 * **Code Editor** - Suggested: [VS Code](https://code.visualstudio.com/)
-* **npm** - It comes bundled with [Node.js](https://nodejs.org/en/), therefore **Node** installation is necessary to get **npm**.  
+* **npm** - It comes bundled with [Node.js](https://nodejs.org/en/), therefore **Node** installation is necessary to get **npm**.
+
+* **(globally) installed Angular CLI (ng)** - installation is performed via **npm**
+
+  ```powershell
+  npm install -g @angular/cli
+  ```
 
 ## Angular application architecture
 
