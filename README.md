@@ -105,6 +105,16 @@ Typically **Angular** utility **scripts** look something like this:
 
 > To stop the running development server terminate the server console session the way You like E.g. by using **^C**
 
+## Creating new Angular application
+
+```powershell
+ng new <app_name> --prefix <prefix>
+```
+
+`--prefix` command allows to specify custom prefix. When not specified, the default value  is `app`.
+
+During execution of this command, **Angular CLI** will ask for some choices to be made about the new application.  
+
 ---
 
 ## References
