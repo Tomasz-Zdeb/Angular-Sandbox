@@ -115,6 +115,56 @@ ng new <app_name> --prefix <prefix>
 
 During execution of this command, **Angular CLI** will ask for some choices to be made about the new application.  
 
+## Component's architecture
+
+An **Angular** component can look like this:
+
+```js
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'pm-root',
+  template: `
+  <div><h1>{{pageTitle}}<h1>
+    <div>My First Component</div>
+  </div>
+  `
+})
+export class AppComponent {
+  pageTitle: string = 'Acme Product Management';
+}
+```
+
+* most bottom part starting with `export` keyword is the **class** that provides all the data and methods for the view - it can be thought of as **code behind**
+* Section inside the `@Component({...})` element is the **decorator** that contains:
+  * metadata
+  * template
+* `import` section imports outside code.
+
+### Component's Class
+
+As you se in above example **class** name consists of two parts:
+
+* feature name
+* `Component` appended to the end of the name
+
+> camell casing is the casing convention for class names
+
+For the root component of an application `app` name is used. Names are later used when referenced in code.
+
+`export` keyword makes the class avaliable to use for other components of the application.
+
+Body of the class consists of:  
+
+* properties
+* methods
+
+On the above example only one property of type **string** with default value specified is being present.
+
+### Component's Metadata
+
+Classes with corresponding metadata create **Angular** components.
+
 ---
 
 ## References
