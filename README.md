@@ -189,6 +189,24 @@ Object passed to the `@Component({})` decorator can have multiple properties. In
 
 Double curly braces syntax `{{...}}` is used for **data binding**. As seen in the previous example, the **class** property is being bound to the **template's HTML** using that syntax.
 
+## Importing
+
+In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
+
+The keyword `import` allows to use **exported** members (proceededd with `export` keyword) from:
+
+* other files within the application
+* Angular framework
+* external **JavaScript** libraries
+
+That's why in the previous example
+
+```js
+import { Component } from '@angular/core';
+```
+
+statement was being used. `Component()` decorator function was not defined in the file, but exists somewhere. Therefore compiles must be instructed where to find it.
+
 ---
 
 ## References
