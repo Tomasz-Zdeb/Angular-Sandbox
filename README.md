@@ -161,9 +161,33 @@ Body of the class consists of:
 
 On the above example only one property of type **string** with default value specified is being present.
 
-### Component's Metadata
+### Component's Metadata (provided by decorator)
 
-Classes with corresponding metadata create **Angular** components.
+Classes with corresponding metadata attached create **Angular** components. Metada is being attached as a **decorator**.
+
+**Decorator** is a function that adds metadata to a **class**, its members or its method arguments.
+
+* it's a **TypeScript** feature (however it's a requested feature to implement in next **JavaScript** versions)
+* scope of the decorator is limited to the feature it decorates.
+* it's prefixed with `@` sign
+* Angular provides built-in decorators to provide additional information to Angular
+* it's placed exactly above the feature it's decorating. In above example it is placed exactly above the class it decorates
+* it's simmilar to **attributes** used in other programming languages, thus there is no semicolon at the end of decorator
+* it's a function so at the end it conains opening and closing set of parenthesis: `()` to pass any arguments like an object enclosed in `{}` curly braces
+
+For example `@Component({})` decorator is used to identify a **class** as a **component**.
+
+Object passed to the `@Component({})` decorator can have multiple properties. In above example there are two: `selector` and `template`. Actually a **component** should always have a **template**
+
+**Selector** is a named used to reference the component in **HTML** as a **directive**.
+
+**Directive** is a custom **HTML** tag. Whenever there is a directive placed in **HTML**, corresponding component will be rendered in that place.
+
+```html
+<div><h1> {{property_name}} <h1>
+```
+
+Double curly braces syntax `{{...}}` is used for **data binding**. As seen in the previous example, the **class** property is being bound to the **template's HTML** using that syntax.
 
 ---
 
