@@ -207,6 +207,12 @@ import { Component } from '@angular/core';
 
 statement was being used. `Component()` decorator function was not defined in the file, but exists somewhere. Therefore compiles must be instructed where to find it.
 
+## Single Page Application
+
+**Angular** based applications are the **Single Page Applications**, which means, that in reality only the `index.html` is the real web-page sent to the client. The rest is the **JavaScript** (as an output from the **TypeScript** compilation).
+
+So the whole application is sent to the **client's web browser** and all the interactions happen in **client's browser** even when user is accessing different **URL** since **Angular routing** functionality is providing support for that.  
+
 ---
 
 ## References
