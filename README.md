@@ -64,7 +64,7 @@ It's the main feature of **TypeScript**. That means that every object in the cod
 * Interfaces
 * Inheritance
 
-## Setting up the application
+## Setting up Angular application
 
 In order to develop **Angular** application, thing such as:
 
