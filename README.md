@@ -187,7 +187,7 @@ For example `@Component({})` decorator is used to identify a **class** as a **co
 
 Object passed to the `@Component({})` decorator can have multiple properties. In above example there are two: `selector` and `template`. Actually a **component** should always have a **template**
 
-**Selector** is a named used to reference the component in **HTML** as a **directive**.
+**Selector** is a name used to reference the component in **HTML** as a **directive**.
 
 **Directive** is a custom **HTML** tag. Whenever there is a directive placed in **HTML**, corresponding component will be rendered in that place.
 
