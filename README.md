@@ -242,6 +242,14 @@ It utilizes the `@NgModule()` decorator. Properties passed to the decorator are 
 
 ---
 
+## Debugging the application
+
+**Chrome developer tools** offer a wide range of features. Thingls like **Elements** - displaying **DOM** or **Console** are pretty much self explainatory. But **webpack's** possibility to debug **TypeScript** (thanks to map files) is worth mentioning in context of **Angular**.
+
+<img src="./images/chrome-dev-tools.png" alt="chrome developer tools pane" width=700>
+
+---
+
 ## References
 
 * [Angular Docs](https://angular.io/docs)
