@@ -215,7 +215,30 @@ import { Component } from '@angular/core';
 
 statement was being used. `Component()` decorator function was not defined in the file, but exists somewhere. Therefore compiles must be instructed where to find it.
 
-## Bootstrapping the application - Root component
+## Modules
+
+* used to group components in logical structures, which increases projects structure clarity.  E.g. all modules regarding fetching the data could be bundled into a module
+* provide scope for components
+* components are being assigned to, or imported into modules
+
+Out of the box, `AppComponent`, which is the root component, have following structure:
+
+```js
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent], // here components contained by this module
+  imports: [BrowserModule], // here all the modules that are ment to be imported into the app: user defined ones, third party ones, Angular ones
+  bootstrap: [AppComponent] // startup component of the application - should contain the selector used in the index.html document
+})
+export class AppModule { }
+```
+
+It utilizes the `@NgModule()` decorator. Properties passed to the decorator are arrays.
+
+`BrowserModule` is a necessary module for every browser application.
 
 ---
 
