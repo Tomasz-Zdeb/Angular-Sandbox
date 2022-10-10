@@ -197,6 +197,14 @@ Object passed to the `@Component({})` decorator can have multiple properties. In
 
 Double curly braces syntax `{{...}}` is used for **data binding**. As seen in the previous example, the **class** property is being bound to the **template's HTML** using that syntax.
 
+**Template** is an actual **HTML** that the components consists of. It can be:
+
+* specified inline as a single line enclosed in double quotes
+* specified inline as a multi line enclosed in backticks
+* specified in separate file
+
+First two approaches does not provide **IDE's** support for syntax highlighting.
+
 ## Importing
 
 In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
