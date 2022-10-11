@@ -199,9 +199,9 @@ Double curly braces syntax `{{...}}` is used for **data binding**. As seen in th
 
 **Template** is an actual **HTML** that the components consists of. It can be:
 
-* specified inline as a single line enclosed in double quotes
-* specified inline as a multi line enclosed in backticks
-* specified in separate file
+* specified inline as a single line enclosed in double quotes - using `template:` property
+* specified inline as a multi line enclosed in backticks - using `template:` property
+* specified in separate file - using `templateURL:` property with path to the file containing the **HTML**
 
 First two approaches does not provide **IDE's** support for syntax highlighting.
 
