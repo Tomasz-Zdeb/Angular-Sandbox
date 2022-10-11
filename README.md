@@ -258,6 +258,25 @@ It utilizes the `@NgModule()` decorator. Properties passed to the decorator are 
 
 ---
 
+## Importing Bootstrap and Fontawesome
+
+Both can be installed as packages using **npm**.
+
+```npm
+npm install bootstrap font-awesome
+```
+
+Packages can be then referenced in global `.css` file.
+
+```css
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+```
+
+There is also [Angular dedicatet version](https://github.com/FortAwesome/angular-fontawesome) of **font-awesome**. [Official documentation](https://fontawesome.com/docs/web/use-with/angular) explains how to use it well.
+
+---
+
 ## References
 
 * [Angular Docs](https://angular.io/docs)
