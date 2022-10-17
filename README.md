@@ -289,6 +289,18 @@ Angular supports different kinds of **data binding**:
   <img src={{product.imageUrl}}>
   ```
 
+  At the and it always assigns the value as a string. As already said it support string concatenation, so but when the binded value should be a part of some longer string, the solution is to use interpolation instead of **Property Binding** E.g.
+
+  ```HTML
+  <img src='http://imageWebsite.com/{{product.imageUrl}}'>
+  ```
+
+* **Property Binding** - Another one way data binding. it allows to bind to different types like **boolean** but does not alow the binded value to be a part of a longer string.
+
+  ```HTML
+  <img [src]='product.imageUrl'>
+  ```
+
 ---
 
 ## Built-in Directives
