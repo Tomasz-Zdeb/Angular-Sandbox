@@ -54,7 +54,7 @@ Before being interpreted by a web browser, **TypeScript** must be compiled to pl
 
 ### Strong typing
 
-It's the main feature of **TypeScript**. That means that every object in the code has to be a well known type.
+It's the main feature of **TypeScript**. That means that every object in the code has to be a well known type. But if the default value is assigned to the variable at the declaration type, there is no need to specify the type, since **TypeScript** will automatically determine it.
 
 ### Class-based object-orientation
 
