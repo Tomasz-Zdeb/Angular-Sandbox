@@ -287,6 +287,48 @@ Angular supports different kinds of **data binding**:
 
 ---
 
+## Built-in Directives
+
+As mentioned earlier custom directives can be used to place components by their selectors. **Angular** also provides some built-in directives:
+
+* **Structural directives** - modify structure/layout of the view, by adding, removing or manipulating elements and their children. For example:
+  * **if** statements: `*ngIf: if logic`
+  * **for** loops: `*ngFor: For loop`
+
+The asterix at the beginning means that these are **structural directives**. They are provided by the `BrowserModule`.
+
+### `ngIf` directive
+
+Creates or removes content of **DOM** tree based on evaluated expression. Below example displays the table only when it's not empty.
+
+```HTML
+<div class='table-responsive'>
+  <table class='table' *ngIf='products.lenght'>
+    <thead>
+      ...
+    </thead>
+    <tbody>
+      ...
+    </tbody>
+  </table>
+</div>
+```
+
+### `ngFor` directive
+
+```HTML
+<tr *ngFor='let product of products'>
+  <td></td>
+  <td>{{product.productName}}</td>
+  <td>{{product.productCode}}</td>
+  <td>{{product.releaseDate}}</td>
+  <td>{{product.price}}</td>
+  <td>{{product.starRating}}</td>
+</tr>
+```
+
+---
+
 ## References
 
 * [Angular Docs](https://angular.io/docs)
