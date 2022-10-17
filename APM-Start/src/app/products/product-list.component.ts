@@ -5,9 +5,11 @@ import { Component } from '@angular/core';
     templateUrl: './product-list.component.html'
 })
 export class ProductListComponent {
-  pageTitle: string = 'Product List';
-  imageWidth: number = 50;
-  imageMargin: number = 2;
+  //when default value is provided, there is no
+  //need to specify the type of a property
+  pageTitle = 'Product List';
+  imageWidth = 50;
+  imageMargin = 2;
   products: any[] = [
     {
       "productId": 2,
