@@ -283,7 +283,11 @@ It's a functionality that coordinates communication betwen the component's class
 
 Angular supports different kinds of **data binding**:
 
-* **Interpolation** - One way data binding from class to template. It supports simple math and string concatenation. Double curly brackets are used to interpolate a value: `{{<property_name>}}`. Interpolation can be used directly between tags or to assign a value to tag's property.
+* **Interpolation** - One way data binding from class to template. It supports simple math and string concatenation. Double curly brackets are used to interpolate a value: `{{<property_name>}}`. Interpolation can be used directly between tags or to assign a value to tag's property. E.g.
+
+  ```HTML
+  <img src={{product.imageUrl}}>
+  ```
 
 ---
 
