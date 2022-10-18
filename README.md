@@ -295,7 +295,7 @@ It's a functionality that coordinates communication betwen the component's class
   <img src='http://imageWebsite.com/{{product.imageUrl}}'>
   ```
 
-* **Property Binding** - Another one way data binding from class to template. it allows to bind to different types like **boolean** but does not alow the binded value to be a part of a longer string.
+* **Property Binding** - Another one way data binding from class to template. it allows to bind to different types like **boolean** but does not alow the binded value to be a part of a longer string. It is used to bind values to tag attributes.
 
   ```HTML
   <img [src]='product.imageUrl'>
