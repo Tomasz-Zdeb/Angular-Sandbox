@@ -319,6 +319,39 @@ Connects an event to the method in the component.
 
 Here **click** event of **button** is bound to `toggleImage()` method, so clicking the button will invoke this method. All available events could be found online, for example on [Mozilla Developer Network Web Docs article](https://developer.mozilla.org/en-US/docs/Web/Events).
 
+## Pipes
+
+They are very closely related with data binding. Since they are used to transform bound data before display.
+
+Angular provides some built in pipes for very common conversions like: **dates**, **numbers**, **decimals**, **percents**, **currencies** and **JSON**, but custom pipes can be also created as needed.
+
+Using pipe literally involves pipe symbol `|` and name of the pipe. E.g.
+
+```HTML
+<h4>
+  Filtered by: {{ listFilter | lowercase }}
+</h4>
+```
+
+```HTML
+<img [src]='product.imageUrl'
+     [title]='product.productName | uppercase'>
+```
+
+Pipes can be chained.
+
+```HTML
+{{ product.price | currency | lowercase }}
+```
+
+As well as they can accept parameters
+
+```HTML
+{{ product.price | currency:'USD':'symbol':'1.2-2' }}
+```
+
+Above example consists of three parameters passed to `currency` pipe. Second one tells the pipe to display the symbol instad of currency abbreviation. The last one means that there must be at least one integer digit before the decimal point, at least two digits after the decimal point and no more than to digits after the decimal point.
+
 ---
 
 ## Built-in Directives
