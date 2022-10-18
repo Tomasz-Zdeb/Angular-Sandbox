@@ -301,6 +301,14 @@ It's a functionality that coordinates communication betwen the component's class
   <img [src]='product.imageUrl'>
   ```
 
+* **Two Way Binding** - Requires import of `FormsModule` from `@angular/forms`. It is a part of `FormsModule` since forms most often utilize two way data binding.
+
+  `[(ngModel)]` directive is used to actually perform the binding. There is no need to specify what attribute is bound with the specified property, since the directive automatically binds it with the right attribute.
+
+  ```HTML
+  <input type="text" [(ngModel)]='listFilter'/>
+  ```
+
 ### event binding
 
 Connects an event to the method in the component.
