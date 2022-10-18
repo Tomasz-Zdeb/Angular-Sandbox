@@ -281,7 +281,7 @@ There is also [Angular dedicatet version](https://github.com/FortAwesome/angular
 
 It's a functionality that coordinates communication betwen the component's class and its template. Class provides data for the template. The template can raise events to trigger speciffic behaviours or pass data back to the class.
 
-Angular supports different kinds of **data binding**:
+### data binding
 
 * **Interpolation** - One way data binding from class to template. It supports simple math and string concatenation. Double curly brackets are used to interpolate a value: `{{<property_name>}}`. Interpolation can be used directly between tags or to assign a value to tag's property. E.g.
 
@@ -295,11 +295,21 @@ Angular supports different kinds of **data binding**:
   <img src='http://imageWebsite.com/{{product.imageUrl}}'>
   ```
 
-* **Property Binding** - Another one way data binding. it allows to bind to different types like **boolean** but does not alow the binded value to be a part of a longer string.
+* **Property Binding** - Another one way data binding from class to template. it allows to bind to different types like **boolean** but does not alow the binded value to be a part of a longer string.
 
   ```HTML
   <img [src]='product.imageUrl'>
   ```
+
+### event binding
+
+Connects an event to the method in the component.
+
+```HTML
+<button (click)='toggleImage()'>
+```
+
+Here **click** event of **button** is bound to `toggleImage()` method, so clicking the button will invoke this method. All available events could be found online, for example on [Mozilla Developer Network Web Docs article](https://developer.mozilla.org/en-US/docs/Web/Events).
 
 ---
 
@@ -354,3 +364,5 @@ Creates or removes content of **DOM** tree based on evaluated expression. Below 
 * [Angular: Getting Started Pluralsight Course](https://app.pluralsight.com/library/courses/angular-2-getting-started-update/table-of-contents)
 
 * [DeborahK's Angular-GettingStarted GitHub Repository](https://github.com/DeborahK/Angular-GettingStarted)
+
+* [Mozilla Developer Network Web Docs article on web events](https://developer.mozilla.org/en-US/docs/Web/Events)
