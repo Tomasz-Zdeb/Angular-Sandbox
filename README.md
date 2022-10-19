@@ -404,6 +404,22 @@ Creates or removes content of **DOM** tree based on evaluated expression. Below 
 </tr>
 ```
 
+## Interfaces
+
+**Angular's** **interfaces** act as specification of a related set of properties and methods. There are two ways to use an **interface**:
+
+* As a type - **interface** identifies properties of a type. Later when definig a variable, interface is used as type. It is a good practise to define interface for any unique data type
+
+  ```typescript
+  export interface IProduct {
+    productId: number;
+    productName: string;
+    price: number;
+  }
+  ```
+
+* As a feature set - **interface** identifies set of properties and methods declarations, that perform certain action. That is simmilar to **OOP's** usage of **interfaces**. To implement an interface into component's class, `implements` keyword is used along with interface name.
+
 ---
 
 ## References
