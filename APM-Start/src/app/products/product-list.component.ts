@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
 
 @Component({
@@ -6,7 +6,7 @@ import { IProduct } from './product';
     templateUrl: './product-list.component.html',
     styleUrls: [ './product-list.component.css' ]
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
   //when default value is provided, there is no
   //need to specify the type of a property
   pageTitle = 'Product List';
@@ -40,5 +40,9 @@ export class ProductListComponent {
   toggleImage(): void
   {
     this.showImage = !this.showImage;
+  }
+
+  ngOnInit(): void {
+      console.log("ngOnInit method has been executed")
   }
 }
