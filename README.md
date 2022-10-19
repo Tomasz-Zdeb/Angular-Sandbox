@@ -401,6 +401,23 @@ As well as they can accept parameters
 
 Above example consists of three parameters passed to `currency` pipe. Second one tells the pipe to display the symbol instad of currency abbreviation. The last one means that there must be at least one integer digit before the decimal point, at least two digits after the decimal point and no more than to digits after the decimal point.
 
+### Implementing custom pipe
+
+Depending whether it's a pipe shared by many components or a component specific one, create a dedicated `.ts` file in `shared` or component's directory. Then compose the file:
+
+* import `Pipe` and `PipeTransform` from `@angular/core`
+* create exported class following naming convention `<...>Pipe`
+* add `@Pipe({})` decorator with `name` property
+* make the class implement `PipeTransorm` interface
+* implement interface's method: `transform`
+
+### Using custom pipe
+
+In order to use a custom pipe:
+
+* import the pipe's class to the module it will be used in or in `app` module for global usage
+* include the imported class in `declarations` **property** array
+
 ---
 
 ## Built-in Directives
