@@ -205,6 +205,16 @@ Double curly braces syntax `{{...}}` is used for **data binding**. As seen in th
 
 First two approaches does not provide **IDE's** support for syntax highlighting.
 
+### Good component
+
+Should utilize:
+
+* Strong typing
+* Interfaces - for custom types
+* Encapsulation of it's own specific styles
+* Usage of pipes for propper data display
+* Nesting of other component if necessary in order to reuse existing code
+
 ## Importing
 
 In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
