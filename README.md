@@ -230,6 +230,30 @@ To ship custom styles with an easy to manage way with the component. There is a 
 Outside stylesheets can be also utilized, using `styleUrls`
 property to specify the array of stylesheet **URLs**.
 
+## Component's lifecycle
+
+Actual lifecycle of **Angular** component consists of:
+
+* Creation
+* Render
+* Creation and render of children
+* Processing changes (by binding)
+* Disposal
+
+### Lifecycle hooks
+
+**Angular** provides a way to perform actions when a certain lifecycle event occurs. This functionality is implemented via **lifecycle hooks** - interfaces that allow to bind a method to lifecycle event. Most popular **lifecycle hooks** are:
+
+* `OnInit` - used to perfrom component initialization and data retrieval
+* `OnChange` - used to perform actions after **input properties** change
+* `OnDestroy` - used to perform cleanup before destroying a component
+
+To implement a **lifecycle hook**:
+
+* import it's interface from `@angular/core` E.g. `OnInit`
+* make your component's class implement that interface
+* implement the interface method E.g. `ngOnInit()`
+
 ## Importing
 
 In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
