@@ -215,6 +215,21 @@ Should utilize:
 * Usage of pipes for propper data display
 * Nesting of other component if necessary in order to reuse existing code
 
+### Encapsulating styles into component
+
+To ship custom styles with an easy to manage way with the component. There is a dedicated `styles` property (an array) that can be added in the `@Component({})` decorator's object.
+
+```typescript
+@Component({
+  selector: 'app-userList',
+  templateUrl: './user.list.component.html',
+  styles: ['thead {color: #427BA8}']
+})
+```
+
+Outside stylesheets can be also utilized, using `styleUrls`
+property to specify the array of stylesheet **URLs**.
+
 ## Importing
 
 In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
