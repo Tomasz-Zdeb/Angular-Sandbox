@@ -254,6 +254,12 @@ To implement a **lifecycle hook**:
 * make your component's class implement that interface
 * implement the interface method E.g. `ngOnInit()`
 
+## Component's usage
+
+* **As a directive** - results in rendering of `App` component or nested components
+
+* **As a Routing target** - results in full page style view
+
 ## Importing
 
 In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
