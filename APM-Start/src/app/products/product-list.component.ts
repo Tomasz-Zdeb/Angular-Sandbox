@@ -9,7 +9,7 @@ import { IProduct } from './product';
 export class ProductListComponent implements OnInit {
   //when default value is provided, there is no
   //need to specify the type of a property
-  pageTitle = 'Product List';
+  pageTitle = 'Product List: ';
   imageWidth = 50;
   imageMargin = 2;
   showImage = false;
@@ -64,5 +64,9 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
       console.log("ngOnInit method has been executed")
       this.listFilter = '';
+  }
+
+  onRatingClicked(message: string): void{
+    this.pageTitle = `Product List: ${message}`;
   }
 }
