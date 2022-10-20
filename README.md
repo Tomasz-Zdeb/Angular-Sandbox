@@ -505,6 +505,14 @@ console.log(this.price);
 
 Good place to initialize a property with some default value is `ngOnInit()` lifecycle hook method.  
 
+## Arrow functions
+
+A concept similar to anonymous functions with **C# lambda operators**, E.g.
+
+```typescript
+(product: IProduct) => product.productName.toLowerCase();
+```
+
 ---
 
 ## References
