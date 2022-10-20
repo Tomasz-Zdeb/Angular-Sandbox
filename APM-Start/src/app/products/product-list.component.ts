@@ -21,7 +21,10 @@ export class ProductListComponent implements OnInit {
   set listFilter(value: string){
     this._listFilter = value;
     console.log('Setter performed action:',value=='' ? 'EMPTY-STRING' : value);
+    this.filteredProducts = this.performFilter(value);
   }
+
+  filteredProducts: IProduct[] = [];
 
   products: IProduct[] = [
     {
@@ -45,6 +48,13 @@ export class ProductListComponent implements OnInit {
       "imageUrl": "assets/images/hammer.png"
     }
   ]
+
+  performFilter(filterBy: string): IProduct[]
+  {
+    filterBy = filterBy.toLocaleLowerCase();
+    return this.products.filter((product: IProduct) => 
+    product.productName.toLocaleLowerCase().includes(filterBy));
+  }
 
   toggleImage(): void
   {
