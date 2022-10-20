@@ -13,7 +13,16 @@ export class ProductListComponent implements OnInit {
   imageWidth = 50;
   imageMargin = 2;
   showImage = false;
-  listFilter = '';
+
+  private _listFilter: string = '';
+  get listFilter(): string{
+    return this._listFilter;
+  }
+  set listFilter(value: string){
+    this._listFilter = value;
+    console.log('Setter performed action:',value=='' ? 'EMPTY-STRING' : value);
+  }
+
   products: IProduct[] = [
     {
       "productId": 2,
@@ -44,5 +53,6 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
       console.log("ngOnInit method has been executed")
+      this.listFilter = '';
   }
 }
