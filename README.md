@@ -260,6 +260,55 @@ To implement a **lifecycle hook**:
 
 * **As a Routing target** - results in full page style view
 
+## Nesting components
+
+Characteristics of nestable components are:
+
+* Their template manages a fragment of a larger view
+* They have selectors
+* (optionally) They communicate with their containers
+
+Nested components can **get input data** from their container components, but they can also **raise events** to notify container components
+
+### **Input data**: container component to nested component communication
+
+`@Input()` decorator is used to mark a property as an input property. Correct syntax is to put the decorator just before the property in nested component. E.g.
+
+```typescript
+export class StarComponent {
+  @Input() rating: number;
+  cropWidth: number;
+}
+```
+
+Then container component passes the data using **property binding**. E.g.
+
+```HTML
+<pm-star [rating]='product.starRating'></pm-star>
+```
+
+Container components can only bind to nested component's properties that are marked with the `@Input()` decorator.
+
+### Passing events from nested component to container component
+
+Nested components utilize `@Output()` decorator to decorate any property that is of event type. In **Angular** an event is defined within `EventEmitter<T>` object. `EventEmitter<T>` is a generic, which means that the type to be passed with the event can be specified in the angle brackets. To pass multiple values within the event, combine them into an object and pass the object. E.g.
+
+```typescript
+@Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
+```
+
+Defined event then can be emitted (raised).
+
+```typescript
+this.ratingClicked.emit('Something happened');
+```
+
+Container element has to bind the event to some method **event binding**
+
+```HTML
+<pm-star (ratingClicked)='onRatingClicked($event)'></pm-star>
+```
+
 ## Importing
 
 In order to use an external **class** or **method** in a file, there need to be some reference provided for compiler to instruct him where to look for that **class** or **method**. To do so `import` statement is used. It's a **TypeScript** feature simillar to **import** or **using** statements used in different languages.
