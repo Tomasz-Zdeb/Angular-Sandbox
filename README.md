@@ -476,6 +476,35 @@ Creates or removes content of **DOM** tree based on evaluated expression. Below 
 
 * As a feature set - **interface** identifies set of properties and methods declarations, that perform certain action. That is simmilar to **OOP's** usage of **interfaces**. To implement an interface into component's class, `implements` keyword is used along with interface name.
 
+## Getters and Setters
+
+In **Angular** concept of **getters** and **setters** is very similar to what is known from popular object oriented programming languages.
+
+**Getters** and **setters** require private backing variable to store the actual value, naming convention for such is: `_<name>`.
+
+```typescript
+private _price: number = 0;
+get price(): number {
+  ...
+  return this._price;
+}
+set price(value: number) {
+  this._prcie = value;
+}
+```
+
+Usage of **getters** and **setters** covers any modifications of value and any actions that should take place during that modifications. E.g. when filter textbox is updated, the list that is about to get filtered should actually get filtered. To use **getter** or setter simply try to read the property  value or asign the property a value.
+
+```typescript
+this.price = 100;
+```
+
+```typescript
+console.log(this.price);
+```
+
+Good place to initialize a property with some default value is `ngOnInit()` lifecycle hook method.  
+
 ---
 
 ## References
